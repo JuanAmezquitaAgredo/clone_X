@@ -32,14 +32,12 @@ class _IconMenuWidgetState extends State<IconMenuWidget> {
       onTap: _toggleIconStyle,
       child: Container(
         decoration: const BoxDecoration(
-          shape: BoxShape.circle, // Asegura un botón circular
           color: Colors.transparent, // Fondo completamente transparente
         ),
         padding: const EdgeInsets.all(10), // Espaciado interno
         child: Icon(
           widget.icon,
-          size: _isPressed ? 35 : 30, // Simula efecto de negrita con tamaño
-          color: _isPressed ? Colors.black : const Color.fromARGB(255, 27, 27, 27), // Cambia color al presionar
+          size: 35, 
         ),
       ),
     );
